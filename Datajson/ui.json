@@ -1,0 +1,55 @@
+ [
+    {
+        "title": "账号管理",
+        "icon": "",
+        "class":"mian-title",
+        "children": [
+            {
+                "title": "账号管理",
+                "icon": " ",
+                "class":"",
+                "hash":"/manage"
+            }
+        ]
+    },
+    {
+        "title": "文案设置",
+        "icon": "",
+        "class":"mian-title",
+        "children": [
+            {
+                "title": "文案设置",
+                "icon": " ",
+                "class":"",
+                "hash":"/text"
+            }
+        ]
+    },
+    {
+        "title": "任务管理",
+        "icon": "",
+        "class":"mian-title",
+        "children": [
+            {
+                "title": "任务管理",
+                "icon": " ",
+                "class":"",
+                "hash":"/task"
+            }
+        ]
+    },
+    {
+        "title": "历史管理",
+        "icon": "",
+        "class":"mian-title",
+        "children": [
+            {
+                "title": "历史管理",
+                "icon": " ",
+                "class":"",
+                "hash":"history"
+            }
+        ]
+    }
+   
+]

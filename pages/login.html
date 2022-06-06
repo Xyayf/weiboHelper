@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" style=" width:100%; height: 100%">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/menu.css">
+</head>
+
+<body style=" width:100%; height: 100%">
+    woshilogin
+    <!-- <button  id="login"></button> -->
+    <!-- <iframe src="" frameborder="0" id="ifram"></iframe> -->
+    <webview src="https://weibo.com/" style=" width:100%; height: 100%" nodeintegration></webview>
+    <!-- <iframe src="https://www.baidu.com" frameborder="0"></iframe> -->
+    <script src="test.js">
+
+
+    </script>
+    <script>
+
+// const childWindow = window.open('', 'modal')
+// console.log(childWindow)
+
+
+        // function ajax(url,body){
+        //   const xhr=new XMLHttpRequest()
+        //   xhr.open("get",url)
+        //   xhr.setRequestHeader("cookie",{"h":"x"})
+        //   xhr.responseType="blob"
+        //   xhr.onload=function(e){
+        //     var url = window.URL.createObjectURL(xhr.response);
+        //     document.getElementById("ifram").src=url
+        //   }
+        //   xhr.send(body)
+        // }
+
+        // ajax("https://api.weibo.com/oauth2/authorize")
+
+
+        // function ajax(url,body){
+        //   const xhr=new XMLHttpRequest()
+        //   xhr.open("get",url)
+
+        //   xhr.withCredentials = true 
+        //   xhr.onload=function(e){
+        //    console.log(xhr.getAllResponseHeaders())
+        //   }
+        //   xhr.send(body)
+        // }
+
+        // ajax("http://localhost:1337/cookie")
+
+
+        // var myHeaders = new Headers();
+        // myHeaders.append('Cookie', { h: "bo" });
+        // const request = new Request('http://localhost:1337/cookie', {
+        //     headers:myHeaders
+        // });
+
+        // fetch(request)
+        //     .then(async response => {
+        //         if (response.status === 200) {
+        //             console.log(await response.text())
+        //         } else {
+        //             throw new Error('Something went wrong on API server!');
+        //         }
+        //     })
+
+
+    </script>
+    <div class="menu-title" data-hash=" /一级">
+        <div><i class=icon-1></i><span>一级标题</span></div>
+    </div>
+    <ul class='menu-list' style='height:0px ;overflow:hidden;text-indent: 1em;'>
+        <li class=submenu-item>
+            <div class="menu-title" data-hash=" /一级">
+                <div><i class=icon-2></i><span>二级标题</span></div>
+            </div>
+            <ul class='menu-list' style='height:0px ;overflow:hidden;text-indent: 2em;'>
+                <li class=submenu-item>
+                    <div class="menu-title" data-hash=" /一级/山脊">
+                        <div><i class=icon3></i><span>三级标题</span></div>
+                    </div>
+                </li>
+                <li class=submenu-item>
+                    <div class="menu-title " data-hash=" /一级">
+                        <div><span>shanjig</span></div>
+                    </div>
+                    <ul class='menu-list' style='height:0px ;overflow:hidden;text-indent: 3em;'>
+                        <li class=submenu-item>
+                            <div class="menu-title " data-hash=" /一级/siji">
+                                <div><span>四级标题</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class=submenu-item>
+            <div class="menu-title " data-hash=" /一级/世界">
+                <div><span>二级标题</span></div>
+            </div>
+        </li>
+    </ul>
+    <div class="menu-title" data-hash=" ">
+        <div><i class=icon-1></i><span>一级标题</span></div>
+    </div>
+    <ul class='menu-list' style='height:0px ;overflow:hidden;text-indent: 1em;'>
+        <li class=submenu-item>
+            <div class="menu-title" data-hash=" ">
+                <div><i class=icon-2></i><span>二级标题</span></div>
+            </div>
+            <ul class='menu-list' style='height:0px ;overflow:hidden;text-indent: 2em;'>
+                <li class=submenu-item>
+                    <div class="menu-title" data-hash=" ">
+                        <div><i class=icon3></i><span>三级标题</span></div>
+                    </div>
+                </li>
+                <li class=submenu-item>
+                    <div class="menu-title " data-hash=" ">
+                        <div><span>shanjig</span></div>
+                    </div>
+                    <ul class='menu-list' style='height:0px ;overflow:hidden;text-indent: 3em;'>
+                        <li class=submenu-item>
+                            <div class="menu-title " data-hash=" /你好">
+                                <div><span>四级标题</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class=submenu-item>
+            <div class="menu-title " data-hash=" ">
+                <div><span>二级标题</span></div>
+            </div>
+        </li>
+    </ul>
+    <script>
+        function forEeachArrlike(DOM, callback, evenName = "click") {
+            for (let i = 0; i < DOM.length; i++) {
+                DOM[i].addEventListener(`${evenName}`, callback)
+            }
+        }
+        const titleDOM = document.querySelectorAll(".menu-title")
+        forEeachArrlike(titleDOM, function () {
+            for (let i = 0; i < titleDOM.length; i++) {
+                titleDOM[i].style.background = ""
+            }
+            this.style.background = "var(--menuactivety)"
+            const childrenDom = this.nextElementSibling
+            if (childrenDom) {
+                if (childrenDom.style.height == "0px") {
+                    childrenDom.style.height = "auto"
+                } else {
+                    childrenDom.style.height = "0px"
+                }
+            } else {
+                window.location.hash = this.dataset["hash"]
+
+            }
+
+        })
+    </script>
+</body>
+
+</html>

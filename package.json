@@ -1,0 +1,21 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win":"electron-packager ./ ZYF --platform=win32 --out ./dist  --overwrite  --ignore=node_modules --arch=x64 icon=./image/icon.ico"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^18.2.3",
+    "electron-packager": "^15.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "electron-builder": "^23.0.3"
+  }
+}

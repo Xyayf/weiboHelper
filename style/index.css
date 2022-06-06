@@ -1,0 +1,188 @@
+:root {
+  --button-backgroundcolor: #c875ff;
+  --button-border: #dd55ff;
+  --swich-mode: #8201f3;
+}
+.button-default {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 200;
+  background-color: var(--button-backgroundcolor);
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.detel-button {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 200;
+  background-color: var(--button-backgroundcolor);
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: red;
+}
+.button-custom {
+  width: 150px;
+  margin: 10px  auto 0 auto;
+  transform: translateX(-50%);
+  display: block;
+}
+.content {
+  margin-left: 200px;
+  background-color: #f5edfe;
+  height: 100%;
+  min-width: 778px;
+}
+.content .manage_account {
+  padding: 10px;
+}
+.content .manage_account .table {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.content .manage_account .table tr {
+  border-bottom: 1px #ccc solid;
+  display: flex;
+}
+.content .manage_account .table tr td {
+  flex: 1;
+  height: 55px;
+  line-height: 55px;
+  border-right: 1px #ccc solid;
+}
+.content .manage_account .table .detel-button {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 200;
+  background-color: var(--button-backgroundcolor);
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.content .manage_account #addWindow {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 200;
+  background-color: var(--button-backgroundcolor);
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.content .setting_text {
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+.content .setting_text .content-text {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px ;
+}
+.content .setting_text .content-text .swich-mode {
+  background-color: var(--swich-mode);
+  display: flex;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.content .setting_text .content-text .swich-mode div {
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  padding: 5px;
+  font-weight: 200;
+  cursor: pointer;
+}
+.content .setting_text .content-text .swich-mode div:last-of-type {
+  flex: 2;
+  cursor: default;
+}
+.content .setting_text .content-text .text-table tr {
+  border-bottom: 1px solid #bebebe;
+}
+.content .setting_text .content-text .text-table tr td {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+.content .setting_text .content-text .text-table tr td:nth-child(2) {
+  text-align: left;
+}
+.content .setting_text .content-text .text-table tbody {
+  font-size: 12px;
+}
+.content .task_manage {
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+.content .task_manage .task-contain {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px ;
+}
+.content .task_manage .task-contain .choose-task-mode {
+  padding: 10px 10px;
+  border-bottom: 1px #ccc solid;
+}
+.content .task_manage .task-contain .choose-task-mode button {
+  margin-left: 10px;
+}
+.content .task_manage .task-contain li {
+  display: flex;
+  padding: 10px 20px;
+  border-bottom: 1px #ccc solid;
+}
+.content .task_manage .task-contain li p {
+  padding: 5px 10px;
+  width: 120px;
+  text-align: center;
+  width: 200px;
+}
+.content .task_manage .task-contain li .task-input-url {
+  flex: 1;
+}
+.content .history_task .task-contain {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px ;
+}
+.content .history_task .task-contain .choose-task-mode {
+  padding: 10px 10px;
+  border-bottom: 1px #ccc solid;
+}
+.content  .start-page {
+  background: url("../image/backgrond.jpeg") no-repeat center center;
+}
+input {
+  background-color: whitesmoke;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 200px;
+}
+input::placeholder {
+  color: #ccc !important;
+  font-weight: 200;
+  font-size: 12px;
+}
+select {
+  background-color: whitesmoke;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  color: #555666;
+  font-size: 12px;
+}

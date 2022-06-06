@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+  <title>Hello!</title>
+  <link rel="stylesheet" href="../style/rest.css">
+  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/app.css">
+  <link rel="stylesheet" href="../menu/menu.css">
+</head>
+
+<body>
+  <!-- <a href="./login.html" >hjhjkhk</a> -->
+  <!-- <button id="show">windowOpen子窗口</button> -->
+  <!-- <button id="showAllWindow" style="font-size: 18px;">显示所有窗口</button> -->
+  <article class="menu">
+  </article>
+  <div class="content">
+    <section class="manage_account" data-hash="/manage">
+      <table class="table">
+        <thead>
+          <tr class="table-tr">
+            <td> <button id="addWindow">添加账号</button></td>
+            <td><span>账号</span></td>
+            <td>用户管理</td>
+          </tr>
+        </thead>
+        <tbody class="table-tbody"></tbody>
+      </table>
+      </select>
+    </section>
+    <section class="setting_text" data-hash="/text">
+      <!-- <input type="text" id="targetLink"> -->
+      <section class="content-text">
+        <div class="swich-mode">
+          <div class="comment" onclick="switchMode(event)" data-mode="comment">评论</div>
+          <div class="transmit" onclick="switchMode(event)" data-mode="transmit">转发</div>
+          <div></div>
+        </div>
+        <table class="text-table" style="width: 100%;">
+          <thead>
+            <tr>
+              <td colspan="3">
+                <input type="text" class="input-default text-input" placeholder="请输入内容" style="width: 100%;">
+              </td>
+              <td><button class="button-default" onclick="inputAddtext(event)">添加</button></td>
+              <td>
+                <button class="button-default detel-button" onclick="inputDeteltext(event)">清空</button>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="text-table-tbody">
+
+          </tbody>
+        </table>
+      </section>
+    </section>
+    <section class="history_task" data-hash="/history">faferfafaf</section>
+    <section class="task_manage" data-hash="/task">
+      <div class="task-contain">
+        <div class="choose-task-mode">
+          <button class=" button-default task-mode-comment" data-mode="2" onclick="taskMode(event)">
+            评论任务
+          </button>
+          <button class=" button-default " data-mode="1" onclick="taskMode(event)">
+            转发任务</button>
+        </div>
+        <p style="padding: 5px; background-color: antiquewhite; color: orange;">任务间隔请输入分钟,每次执行时间间隔请输入秒数</p>
+        <ul>
+          <li class="weibo-url">
+            <p>微博链接:</p>
+            <div class="task-input-url"><input type="text" style="width: 100%;" placeholder="请输入链接 " id="url"></div>
+          </li>
+          <li>
+            <p>选择任务账号:</p>
+            <div class="select-account">
+              <select name="username" id="username">
+              </select>
+            </div>
+          </li>
+          <li>
+            <p>任务间隔时间:</p>
+            <div>
+              <input type="number" placeholder="例如15分钟填入：15" id="cycleDelay">
+            </div>
+          </li>
+          <li>
+            <p>任务次数:</p>
+            <div>
+              <input type="number" placeholder="5次填写：5" id="cycleTime">
+            </div>
+          </li>
+          <li>
+            <p>每次任务执行次数:</p>
+            <div>
+              <input type="number" placeholder="10次填写：10" id="onceTime">
+            </div>
+          </li>
+          <li>
+            <p>每次执行时间间隔</p>
+            <div>
+              <input type="number" placeholder="5s填写5：5" id="onceDelay">
+            </div>
+          </li>
+        </ul>
+        <button class=" button-default button-custom " onclick="createTask()">
+          创建任务</button>
+      </div>
+      <div class="task-contain " style="display: flex; justify-content: space-evenly;">
+        <button class=" button-default" onclick="startTask()">
+          开始所有任务
+        </button>
+        <button class=" button-default" onclick="hidenTask()">
+          隐藏所有任务</button>
+          <button class=" button-default" onclick="showTask()">
+            显示所有任务</button>
+        <button class=" button-default" onclick="pauseTask()">
+          暂停所有任务</button>
+        <button class=" button-default" onclick="restartTask()">
+          重启所任务任务</button>
+        <button class=" button-default" onclick="finishTask()">
+          结束所有任务</button>
+      </div>
+     <div class="task-render">
+    
+     </div>
+    </section>
+    <section class="start-page" style="font-size: 40px;text-align: leftr;height: 100%;"> 欢迎来到我的app
+    </section>
+  </div>
+  <script src="./render.js">
+  </script>
+  <script src="../menu/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+:root{
+    --button-backgroundcolor:#c875ff;
+    --button-border:#dd55ff ;
+    --swich-mode:#8201f3;
+}
+.button-default(){
+    cursor: pointer;
+    color: #fff;
+    font-weight: 200;
+    background-color: var(--button-backgroundcolor);
+    border: 1px solid var(--button-border);
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+
+.content(){
+    background-color: whitesmoke;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom:10px ;
+}
+.button-default{
+    .button-default()
+}
+.detel-button{
+    .button-default();
+    background-color:red;
+}
+.button-custom { 
+    width: 150px;
+    margin: 10px  auto 0 auto;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.content{
+    margin-left: 200px;
+    background-color: #f5edfe;
+    height: 100%;
+    min-width: 778px;
+    .manage_account{
+        padding: 10px;
+        .table{
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+            
+           tr{
+               border-bottom: 1px #ccc solid;
+               display: flex;
+               td{  
+                   flex: 1;
+                   height: 55px;
+                   line-height: 55px;
+                border-right: 1px #ccc solid;
+            }
+           }
+           .detel-button{
+            .button-default()  
+           }
+        }
+        #addWindow{
+            .button-default()
+            
+        }
+    }
+   .setting_text{
+       padding: 10px;
+       height: 100%;
+       overflow: auto;
+
+       .content-text{
+        .content();
+           .swich-mode{
+               background-color:var(--swich-mode);
+               display: flex;
+               color: #fff;
+               margin-bottom: 10px;
+               border-radius: 3px;
+               overflow: hidden;
+               div{
+                   border-right:1px #fff solid ;
+                   border-bottom: 1px #fff solid;
+                   padding: 5px;
+                   font-weight: 200;
+                   cursor: pointer;
+                   &:last-of-type{
+                       flex: 2;
+                       cursor: default;
+                   }
+               }
+               
+           }
+           .text-table{
+               tr{
+                border-bottom: 1px solid rgb(190, 190, 190);
+                   td{
+                    width: 100px;
+                    padding: 10px;
+                    text-align: center;
+                    &:nth-child(2){
+                        text-align: left;
+                    }
+                   }
+               }
+               tbody{
+                   font-size: 12px;
+               }
+           }
+       }
+   }
+   .task_manage{
+       padding: 10px;
+       padding: 10px;
+       height: 100%;
+       overflow: auto;
+       .task-contain{
+           .content();
+           .choose-task-mode{
+            padding: 10px 10px;
+            border-bottom: 1px #ccc solid;
+            button{
+                margin-left: 10px;
+            }
+           }
+
+           li{
+               display: flex;
+               padding: 10px 20px;
+               border-bottom: 1px #ccc solid;
+                p{
+                    padding: 5px 10px;
+                    width: 120px;
+                    text-align: center;
+                    width: 200px;
+                    
+                }
+               .task-input-url{
+                   flex: 1;
+               }
+           }
+       }
+   }
+   .history_task{
+    .task-contain{
+        .content();
+        .choose-task-mode{
+         padding: 10px 10px;
+         border-bottom: 1px #ccc solid;
+        }
+   }
+}　
+
+
+
+
+   .start-page{
+       background: url("../image/backgrond.jpeg") no-repeat center center;
+   }
+}
+
+
+
+
+
+
+  input{
+      background-color: whitesmoke;
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 200px;
+  }
+  input::placeholder {
+    color: #ccc !important;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  select {
+     background-color: whitesmoke;
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 100%;
+      color: #555666;
+      font-size: 12px;
+    
+      
+    }
